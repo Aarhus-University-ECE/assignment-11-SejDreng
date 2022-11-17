@@ -1,0 +1,40 @@
+Exercise 1:
+
+/* Factorial function definition */
+int fact(int n)
+{
+
+/* pre-condition */
+assert (n >= 1);
+
+/* post-condition */
+if(n > 1)
+    return n * fact(n - 1);
+else
+    return 1;
+}
+
+Base case:
+
+int fact(int 1)
+{
+
+/* pre-condition */
+assert (1 >= 1);
+
+/* post-condition */
+if(1 > 1)
+    return n * fact(n - 1);
+else
+    return 1;
+}
+
+// 1 is therefore returned in the base case.
+
+Inductive step:
+
+fact(k)=k*fact(k-1)=k*fackt(k-1*fact(k-2))... and so on and so forth, until k eventually hits 1, our basecase, wich we know is 1.
+
+
+Exercise 2:
+
